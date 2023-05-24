@@ -21,15 +21,10 @@ body {
   background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 }
 
-.cta-image {
-  background-image: url("../images/bg-pattern-circles.svg");
-  background-size: cover;
-}
-
 .bg-circle {
-  /* background-image: url("../images/bg-pattern-circles.svg"); */
-  background-size: cover;
-  background-size: 100%;
+  background-image: url("../images/bg-pattern-circles.svg");
+  /* background-size: cover; */
+  background-size: 135%;
   background-position: 50% -200px;
   background-repeat: no-repeat;
 }
@@ -48,9 +43,5 @@ body {
       hsl(237, 17%, 21%),
       hsl(237, 23%, 32%)
     );
-  }
-  .bg-circle {
-    background-image: none;
-    /* background-size: cover; */
   }
 }
