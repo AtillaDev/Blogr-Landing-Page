@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.intro-gradient {
+  background-image: url("../images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: 35% 30%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 475px) {
+  .intro-gradient {
+    background-image: url("../images/bg-pattern-intro-desktop.svg"),
+      linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    /* background-size: 100%; */
+    background-position: 20% 53%;
+    background-repeat: no-repeat;
+  }
+}
+
+main {
+}
+
+.intro-background {
+}
