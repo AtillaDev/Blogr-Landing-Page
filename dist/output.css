@@ -550,8 +550,16 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.right-\[-234px\] {
+  right: -234px;
 }
 
 .mx-auto {
@@ -581,6 +589,14 @@ video {
 
 .h-\[1\.2rem\] {
   height: 1.2rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .cursor-pointer {
@@ -629,6 +645,18 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -654,6 +682,11 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6 {
@@ -693,7 +726,15 @@ video {
   padding-bottom: 10rem;
 }
 
-.pt-20 {
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-\[5rem\] {
   padding-top: 5rem;
 }
 
@@ -713,6 +754,10 @@ video {
   font-size: 1.1rem;
 }
 
+.text-\[1\.6rem\] {
+  font-size: 1.6rem;
+}
+
 .text-\[2\.2rem\] {
   font-size: 2.2rem;
 }
@@ -725,6 +770,14 @@ video {
   font-weight: 600;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -732,6 +785,11 @@ video {
 .text-lightRed {
   --tw-text-opacity: 1;
   color: hsl(356 100% 66% / var(--tw-text-opacity));
+}
+
+.text-veryDarkBlue {
+  --tw-text-opacity: 1;
+  color: hsl(208 49% 24% / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -742,7 +800,9 @@ video {
 body {
   font-family: "Overpass", sans-serif;
   font-weight: 300;
+  color: hsl(207, 13%, 34%);
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 .intro-gradient {
@@ -762,12 +822,6 @@ body {
   }
 }
 
-main {
-}
-
-.intro-background {
-}
-
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -785,13 +839,30 @@ main {
     height: 2.5rem;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
   }
 
-  .md\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-\[1\.2rem\] {
+    font-size: 1.2rem;
   }
 
   .md\:text-\[3\.7rem\] {

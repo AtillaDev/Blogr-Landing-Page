@@ -24,7 +24,7 @@
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
-    <main class="intro-gradient rounded-bl-[7rem]">
+    <header class="intro-gradient rounded-bl-[7rem]">
       <!-- Navbar -->
       <nav class="container relative mx-auto px-6 py-14 md:px-32">
         <!-- Flex Container -->
@@ -87,16 +87,18 @@
         <div class="flex container flex-col items-center mx-auto">
           <!-- Hero Text -->
           <h1
-            class="text-[2.2rem] text-center text-white font-[Overpass] tracking-tight font-[600] pt-20 px-8 pb-2 md:text-[3.7rem]"
+            class="text-[2.2rem] text-center text-white font-[Overpass] tracking-tight font-[600] pt-10 px-8 pb-2 md:text-[3.7rem]"
           >
             A modern publishing platform
           </h1>
-          <p class="text-center text-white px-8 text-[1.1rem] pb-10">
+          <p
+            class="text-center text-white px-8 text-[1.1rem] pb-10 md:text-[1.2rem]"
+          >
             Grow your audience and build your online brand
           </p>
 
           <!-- Hero Buttons -->
-          <div class="flex px-8 space-x-5 pb-40">
+          <div class="flex px-4 space-x-5 pb-40">
             <a
               href=""
               class="py-[.70rem] px-6 text-lightRed font-[Ubuntu] font-[600] rounded-full bg-white"
@@ -110,6 +112,66 @@
           </div>
         </div>
       </div>
-    </main>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="">
+      <!-- Heading -->
+      <h2
+        class="text-veryDarkBlue text-[1.6rem] leading-tight text-center font-[600] px-10 pt-24 md:text-4xl"
+      >
+        Designed for the future
+      </h2>
+
+      <!-- Feature -->
+      <div
+        class="container relative flex flex-col items-center pt-[5rem] mx-auto space-y-8 md:flex-row md:px-32"
+      >
+        <!-- Mobile IMG -->
+        <img
+          src="./images/illustration-editor-mobile.svg"
+          class="w-[100%] md:hidden"
+          alt=""
+        />
+        <!-- Left component -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <div class="flex flex-col space-y-4">
+            <h2
+              class="text-veryDarkBlue text-[1.6rem] leading-8 text-center font-[600] px-10 md:text-left"
+            >
+              Introducing an extensible editor
+            </h2>
+            <p class="px-10 text-center md:text-left">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div class="flex flex-col space-y-4">
+            <h2
+              class="text-veryDarkBlue text-[1.6rem] leading-8 text-center font-[600] px-10 md:text-left"
+            >
+              Robust content management
+            </h2>
+            <p class="px-10 text-center md:text-left">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </div>
+
+        <!-- Desktop IMG -->
+        <img
+          src="./images/illustration-editor-desktop.svg"
+          alt=""
+          class="hidden md:block w-1/2 absolute right-[-234px]"
+        />
+      </div>
+    </section>
   </body>
 </html>
