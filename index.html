@@ -26,7 +26,7 @@
   <body>
     <header class="intro-gradient rounded-bl-[7rem]">
       <!-- Navbar -->
-      <nav class="container relative mx-auto px-6 py-14 md:px-32">
+      <nav class="container relative mx-auto px-6 py-14 xl:px-32">
         <!-- Flex Container -->
         <div class="flex justify-between items-center">
           <div class="flex justify-between items-center space-x-14">
@@ -34,7 +34,7 @@
 
             <!-- Links -->
             <div
-              class="hidden space-x-6 text-white font-[Ubuntu] font-[500] md:flex"
+              class="hidden space-x-6 text-white font-[Ubuntu] font-[500] lg:flex"
             >
               <div class="flex items-center space-x-3">
                 <a href="#">Product </a
@@ -64,7 +64,7 @@
           </div>
 
           <div
-            class="hidden space-x-6 text-white font-[Ubuntu] font-[500] ml-auto md:block"
+            class="hidden space-x-6 text-white font-[Ubuntu] font-[500] ml-auto lg:block"
           >
             <a href="#">Login</a>
             <a
@@ -77,7 +77,7 @@
           <img
             src="./images/icon-hamburger.svg"
             alt=""
-            class="h-[1.2rem] md:hidden"
+            class="h-[1.2rem] lg:hidden"
           />
         </div>
       </nav>
@@ -125,7 +125,7 @@
 
       <!-- Feature -->
       <div
-        class="container relative flex flex-col items-center pt-[5rem] mx-auto space-y-8 md:flex-row md:px-32"
+        class="container relative flex flex-col items-center pt-[5rem] mx-auto space-y-8 md:flex-row xl:px-32"
       >
         <!-- Mobile IMG -->
         <img
@@ -134,14 +134,14 @@
           alt=""
         />
         <!-- Left component -->
-        <div class="flex flex-col space-y-8 md:w-1/2">
+        <div class="flex flex-col space-y-8 md:w-[55%]">
           <div class="flex flex-col space-y-4">
             <h2
-              class="text-veryDarkBlue text-[1.6rem] leading-8 text-center font-[600] px-10 md:text-left"
+              class="text-veryDarkBlue text-[1.8rem] leading-8 text-center font-[600] px-10 md:text-left"
             >
               Introducing an extensible editor
             </h2>
-            <p class="px-10 text-center md:text-left">
+            <p class="px-10 text-center text-[1.1rem] md:text-left">
               Blogr features an exceedingly intuitive interface which lets you
               focus on one thing: creating content. The editor supports
               management of multiple blogs and allows easy manipulation of
@@ -152,11 +152,11 @@
           </div>
           <div class="flex flex-col space-y-4">
             <h2
-              class="text-veryDarkBlue text-[1.6rem] leading-8 text-center font-[600] px-10 md:text-left"
+              class="text-veryDarkBlue text-[1.8rem] leading-8 text-center font-[600] px-10 md:text-left"
             >
               Robust content management
             </h2>
-            <p class="px-10 text-center md:text-left">
+            <p class="px-10 text-center text-[1.1rem] md:text-left">
               Flexible content management enables users to easily move through
               posts. Increase the usability of your blog by adding customized
               categories, sections, format, or flow. With this functionality,
@@ -169,8 +169,43 @@
         <img
           src="./images/illustration-editor-desktop.svg"
           alt=""
-          class="hidden md:block w-1/2 absolute right-[-234px]"
+          class="hidden w-[61%] md:block w-1/2 absolute right-[-300px]"
         />
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      id="cta"
+      class="cta-gradient z-1 rounded-bl-[5rem] rounded-tr-[5rem] items-end"
+    >
+      <div
+        class="bg-circle flex flex-col items-center relative mt-[16rem] z-2 rounded-bl-[5rem] sm:pl-6 rounded-tr-[5rem] md:py-10 xl:py-20 xl:py-28 sm:container sm:mx-auto xl:ml-32"
+      >
+        <!-- CTA Image -->
+        <img
+          src="./images/illustration-phones.svg"
+          class="mt-[-50%] z-10 sm:mt-[0] sm:w-[50%] lg:w-[35%] sm:absolute sm:left-0 xl:left-[0rem] sm:top-[-15%]"
+          alt=""
+        />
+        <!-- CTA Text -->
+        <div
+          class="flex flex-col px-8 sm:px-0 sm:w-[50%] xl:pr-[10rem] xl:mr-[10rem] mx-auto sm:ml-auto sm:mr-0 xl:px-8"
+        >
+          <h2
+            class="text-white text-[2.2rem] leading-10 text-center font-[600] pb-4 sm:text-left"
+          >
+            State of the Art Infrastructure
+          </h2>
+          <p
+            class="text-center leading-6 text-white text-[1rem] sm:text-left pb-24 sm:pb-0"
+          >
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
       </div>
     </section>
   </body>

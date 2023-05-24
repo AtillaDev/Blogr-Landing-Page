@@ -17,6 +17,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.cta-gradient {
+  background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+}
+
+.bg-circle {
+  background-image: url("../images/bg-pattern-circles.svg");
+  /* background-size: cover; */
+  background-size: 135%;
+  background-position: 50% -200px;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 475px) {
   .intro-gradient {
     background-image: url("../images/bg-pattern-intro-desktop.svg"),
@@ -24,5 +36,12 @@ body {
     /* background-size: 100%; */
     background-position: 20% 53%;
     background-repeat: no-repeat;
+  }
+  .cta-gradient {
+    background: linear-gradient(
+      to right,
+      hsl(237, 17%, 21%),
+      hsl(237, 23%, 32%)
+    );
   }
 }
