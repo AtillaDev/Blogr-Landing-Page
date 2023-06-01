@@ -538,9 +538,9 @@ video {
   }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1025px) {
   .container {
-    max-width: 976px;
+    max-width: 1025px;
   }
 }
 
@@ -583,6 +583,10 @@ video {
   margin-top: 16rem;
 }
 
+.mt-\[3\.6rem\] {
+  margin-top: 3.6rem;
+}
+
 .flex {
   display: flex;
 }
@@ -595,12 +599,20 @@ video {
   height: 0.5rem;
 }
 
-.h-8 {
+.h-\[1\.2rem\] {
+  height: 1.2rem;
+}
+
+.h-\[2rem\] {
   height: 2rem;
 }
 
-.h-\[1\.2rem\] {
-  height: 1.2rem;
+.h-\[37\.5rem\] {
+  height: 37.5rem;
+}
+
+.h-\[48px\] {
+  height: 48px;
 }
 
 .w-1\/2 {
@@ -609,6 +621,14 @@ video {
 
 .w-\[100\%\] {
   width: 100%;
+}
+
+.w-\[138px\] {
+  width: 138px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .cursor-pointer {
@@ -625,6 +645,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -649,10 +673,10 @@ video {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -708,11 +732,6 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -726,11 +745,6 @@ video {
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
-}
-
-.py-\[\.70rem\] {
-  padding-top: .70rem;
-  padding-bottom: .70rem;
 }
 
 .py-\[\.90rem\] {
@@ -754,20 +768,20 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-24 {
   padding-top: 6rem;
 }
 
 .pt-\[5rem\] {
   padding-top: 5rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -790,8 +804,16 @@ video {
   font-size: 1.6rem;
 }
 
+.text-\[17px\] {
+  font-size: 17px;
+}
+
 .text-\[1rem\] {
   font-size: 1rem;
+}
+
+.text-\[2\.15rem\] {
+  font-size: 2.15rem;
 }
 
 .text-\[2\.2rem\] {
@@ -816,6 +838,14 @@ video {
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-\[1\.36\] {
+  line-height: 1.36;
+}
+
+.leading-\[50px\] {
+  line-height: 50px;
 }
 
 .leading-tight {
@@ -868,7 +898,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 475px) {
+@media (min-width: 1025px) {
   .intro-gradient {
     background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
@@ -903,9 +933,9 @@ body {
     }
   }
 
-  @media (min-width: 976px) {
+  @media (min-width: 1025px) {
     .sm\:container {
-      max-width: 976px;
+      max-width: 1025px;
     }
   }
 
@@ -1013,15 +1043,51 @@ body {
   .md\:text-\[1\.2rem\] {
     font-size: 1.2rem;
   }
-
-  .md\:text-\[3\.7rem\] {
-    font-size: 3.7rem;
-  }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1025px) {
+  .lg\:mx-\[unset\] {
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
+  }
+
   .lg\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .lg\:max-w-\[unset\] {
+    max-width: unset;
+  }
+
+  .lg\:max-w-\[1005px\] {
+    max-width: 1005px;
+  }
+
+  .lg\:max-w-\[1105px\] {
+    max-width: 1105px;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:px-\[1\.5rem\] {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:px-\[4rem\] {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:text-\[3\.75rem\] {
+    font-size: 3.75rem;
   }
 }
 
@@ -1038,6 +1104,19 @@ body {
     margin-right: 10rem;
   }
 
+  .xl\:max-w-\[1105px\] {
+    max-width: 1105px;
+  }
+
+  .xl\:max-w-\[1005px\] {
+    max-width: 1005px;
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1051,6 +1130,11 @@ body {
   .xl\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .xl\:pr-\[10rem\] {

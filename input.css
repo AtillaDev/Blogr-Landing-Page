@@ -29,7 +29,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 475px) {
+@media (min-width: 1025px) {
   .intro-gradient {
     background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
